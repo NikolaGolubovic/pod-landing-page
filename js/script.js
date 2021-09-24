@@ -9,7 +9,8 @@ function validateEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-btn.addEventListener("click", function () {
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
   if (!validateEmail(inputEmail.value)) {
     errorMsg.textContent = "Oooops! Please check your email!";
     return;
