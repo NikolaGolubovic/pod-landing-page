@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap');
+:root {
+    --green: rgb(84, 230, 175);
+    --dark: rgb(18, 23, 37);
+    --dark-lighter: rgb(44, 52, 75);
+    --white: rgb(255, 255, 255);
+    --gray: rgb(194, 203, 229);
+    --gray-darker: rgb(90, 102, 138);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+    background-color: var(--green);
+}
+
+@media (min-width: 280px) {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        background: url("../assets/mobile/image-host.jpg") no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
+    }
+    .podcast-app {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 20px;
+        overflow: hidden;
+    }
+    .logo {
+        text-align: center;
+    }
+    .app-desc__title {
+        text-transform: uppercase;
+        margin: 25px 0;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .app-desc__title span {
+        color: var(--green);
+    }
+    .app-desc__text {
+        line-height: 1.5;
+        padding: 20px 0 30px 0;
+        text-align: center;
+        color: var(--gray);
+        font-size: 0.9rem;
+    }
+    .platform-icons {
+        display: flex;
+        margin-top: 30px;
+    }
+    .app-desc__platform-icon {
+        /* background: var(--gray); */
+        margin-right: 5px;
+        width: 24%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .app-desc__platform-icon img {
+        width: 70px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .spotify {
+        position: relative;
+    }
+    .google {
+        position: relative;
+    }
+    .apple {
+        position: relative;
+    }
+    form {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+    }
+    label>* {
+        border: none;
+        border-radius: 30px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    label input {
+        background: var(--dark-lighter);
+    }
+    input:focus {
+        padding-left: 15px;
+        color: white;
+        outline: none;
+    }
+    input[type="text"]::placeholder {
+        padding-left: 10px;
+        font-weight: 700;
+    }
+    label button {
+        background: var(--green);
+        color: var(--dark-lighter);
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.2s all;
+    }
+    label button:hover {
+        opacity: 0.8;
+    }
+    .validation-msg {
+        display: block;
+        height: 15px;
+        position: relative;
+    }
+    .validation-msg p {
+        color: rgb(221, 16, 16);
+        font-weight: 700;
+        font-style: italic;
+        font-size: 0.8rem;
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        order: 1;
+    }
+    .app-desc__title {
+        order: 2;
+    }
+    .app-desc__text {
+        order: 3;
+    }
+    .platform-icons {
+        order: 5;
+    }
+    form {
+        order: 4;
+    }
+    .container {
+        background: url("../assets/tablet/image-host.jpg") no-repeat;
+        background-position: right top;
+        background-size: contain;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
+    }
+    .podcast-app {
+        position: relative;
+        top: -60px;
+        left: -20px;
+        width: 80%;
+        padding: 0;
+        overflow: visible;
+        height: 100vh;
+    }
+    .podcast-app>* {
+        background: var(--dark);
+        margin: -1px;
+        padding: 42px;
+    }
+    .logo {
+        width: 55%;
+        min-height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .app-desc__title {
+        font-size: 2.5rem;
+        line-height: 1.3;
+        text-align: left;
+        font-weight: 300;
+    }
+    .app-desc__text {
+        padding-right: 160px;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    label {
+        position: relative;
+        width: 80%;
+    }
+    label button {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .app-desc__platform-icon img {
+        width: 80px;
+        height: 35px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1090px) {
+    .podcast-app>* {
+        padding: 44px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .logo {
+        width: 65%;
+    }
+    .podcast-app>* {
+        padding: 44.7px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        background: url("../assets/desktop/image-host.jpg") no-repeat;
+        background-position: right top;
+        background-size: contain;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
+        overflow: hidden;
+    }
+    .podcast-app {
+        position: relative;
+        top: -60px;
+        left: -20px;
+        width: 80%;
+        padding: 0;
+        overflow: visible;
+        height: 100vh;
+    }
+    .podcast-app>* {
+        padding: 50px;
+    }
+    .logo {
+        width: 35%;
+        min-height: 300px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .logo img {
+        position: relative;
+        top: 40px;
+        left: 40px;
+    }
+    .app-desc__title {
+        font-size: 3.7rem;
+    }
+    .app-desc__text {
+        padding-top: 0;
+        padding-right: 560px;
+    }
+    label {
+        width: 40%;
+    }
+    .platform-icons {
+        display: flex;
+        margin-left: 0;
+    }
+    .app-desc__platform-icon {
+        margin-top: -30px;
+        margin-left: -80px;
+    }
+    .app-desc__platform-icon img {
+        width: 120px;
+        height: 35px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1599px) {
+    .podcast-app {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1700px) {
+    .podcast-app {
+        width: 80%;
+    }
+    .podcast-app>* {
+        background: var(--dark);
+        margin: -1px;
+        padding: 54px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .podcast-app {
+        width: 70%;
+    }
+    .logo {
+        width: 60%;
+    }
+    .app-desc__title {
+        font-size: 3.7rem;
+        padding-right: 500px;
+    }
+    .app-desc__text {
+        padding-top: 0;
+        padding-right: 680px;
+        padding-bottom: 0;
+    }
+    .app-desc__platform-icon {
+        margin-top: -40px;
+        margin-left: -120px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 2220px) {
+    .logo {
+        width: 65%;
+    }
+    .podcast-app>* {
+        padding: 59px;
+    }
+}
+
+@media (width: 1024px), (height: 1366px) {
+    .container {
+        background: url("../assets/tablet/image-host.jpg") no-repeat;
+        background-position: right top;
+        background-size: cover;
+    }
+    .podcast-app>*:last-of-type {
+        padding-bottom: 160px;
+    }
+    .platform-icons {
+        margin-left: -50px;
+    }
+}
