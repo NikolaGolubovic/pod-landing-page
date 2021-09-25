@@ -22,6 +22,10 @@ body {
     background-color: var(--green);
 }
 
+html {
+    background-color: #121725;
+}
+
 @media (min-width: 280px) {
     .container {
         width: 100%;
@@ -292,6 +296,9 @@ body {
         background: var(--dark);
         margin: -1px;
         padding: 54px;
+    }
+    .platform-icons {
+        margin-left: 20px;
     }
 }
 
