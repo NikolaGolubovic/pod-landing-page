@@ -14,57 +14,66 @@
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
   <body>
-    <div class="container">
-      <main class="podcast-app">
-        <div class="logo">
-          <img src="assets/desktop/logo.svg" alt="" />
-        </div>
-        <h2 class="app-desc__title">
-          <span>Publish your podcasts</span> everywhere.
-        </h2>
-
-        <p class="app-desc__text">
-          Upload your audio to Pod with a single click. We’ll then distribute
-          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
-          and more!
-        </p>
-        <div class="platform-icons">
-          <div class="app-desc__platform-icon">
-            <a href="#">
-              <img
-                src="assets/desktop/pocket-casts.svg"
-                alt="Pocket Cast Logo"
-              />
-            </a>
+    <div class="app-wrapper">
+      <div class="container">
+        <main class="podcast-app">
+          <div class="logo">
+            <img src="assets/desktop/logo.svg" alt="" />
           </div>
-          <div class="app-desc__platform-icon google">
-            <a href="#">
-              <img
-                src="assets/desktop/google-podcasts.svg"
-                alt="Google Podcast Logo"
-              />
-            </a>
+          <div class="app-desc__title">
+            <h2><span>Publish your podcasts</span> everywhere.</h2>
           </div>
-          <div class="app-desc__platform-icon spotify">
-            <a href="#">
-              <img src="assets/desktop/spotify.svg" alt="" />
-            </a>
+          <div class="app-desc__text">
+            <p>
+              Upload your audio to Pod with a single click. We’ll then
+              distribute your podcast to Spotify, Apple Podcasts, Google
+              Podcasts, Pocket Casts and more!
+            </p>
           </div>
-          <div class="app-desc__platform-icon apple">
-            <a href="#">
-              <img src="assets/desktop/apple-podcast.svg" alt="" />
-            </a>
+          <div class="platform-icons">
+            <div class="app-desc__platform-icon">
+              <a href="#">
+                <img
+                  src="assets/desktop/pocket-casts.svg"
+                  alt="Pocket Cast Logo"
+                />
+              </a>
+            </div>
+            <div class="app-desc__platform-icon google">
+              <a href="#">
+                <img
+                  src="assets/desktop/google-podcasts.svg"
+                  alt="Google Podcast Logo"
+                />
+              </a>
+            </div>
+            <div class="app-desc__platform-icon spotify">
+              <a href="#">
+                <img src="assets/desktop/spotify.svg" alt="" />
+              </a>
+            </div>
+            <div class="app-desc__platform-icon apple">
+              <a href="#">
+                <img src="assets/desktop/apple-podcast.svg" alt="" />
+              </a>
+            </div>
           </div>
-        </div>
-        <form action="">
-          <label for=""
-            ><input type="text" placeholder="Email address" /><button>
-              Request Access
-            </button></label
-          >
-          <div class="validation-msg"><p></p></div>
-        </form>
-      </main>
+          <form action="">
+            <label for=""
+              ><input type="text" placeholder="Email address" /><button>
+                Request Access
+              </button></label
+            >
+            <div class="validation-msg">
+              <p class="error-msg"></p>
+              <p class="success-msg"></p>
+            </div>
+          </form>
+        </main>
+      </div>
+      <div class="main-pattern">
+        <img src="assets/desktop/bg-pattern-dots.svg" alt="Dots pattern" />
+      </div>
     </div>
     <script src="js/script.js
   "></script>
