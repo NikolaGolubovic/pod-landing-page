@@ -181,9 +181,12 @@ html {
     .logo {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         width: 45%;
         min-height: 200px;
+    }
+    .logo img {
+        padding-left: 40px;
     }
     .app-desc__title {
         width: 100%;
@@ -265,6 +268,9 @@ html {
         min-height: 200px;
         justify-content: flex-start;
     }
+    .logo img {
+        margin-top: -30px;
+    }
     .app-desc__title {
         width: 100%;
         max-height: 150px;
@@ -272,7 +278,7 @@ html {
     .app-desc__title h2 {
         font-size: 3rem;
         line-height: 1;
-        width: 100%;
+        width: 90%;
     }
     .app-desc__text {
         max-height: 100px;
